@@ -9,7 +9,7 @@ p {
   font-size: 13px;
   color: #818181; }
 
-button.btn, input.form-control, div.thumbnail, div.well, a.btn {
+button.btn, input.form-control, div.thumbnail, div.well, a.btn, .form-control {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
@@ -131,3 +131,6 @@ div.side-description p:nth-child(2) {
   color: #242729;
   padding: 0;
   font-size: 12px; }
+
+form {
+  margin: 50px 0; }

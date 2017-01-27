@@ -170,7 +170,7 @@
                 <!--Left side blog-->
                 <div class="col-xs-10 col-sm-11">
                     <div class="summary">
-                        <h3 id="question-title"><a href="">Title of questions 2</a></h3>
+                        <h3 class="question-title"><a href="">Title of questions 2</a></h3>
                         <div class="expert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Cumque eveniet harum hic id itaque libero mollitia nam natus nemo nisi odio
                             omnis quibusdam quo saepe sint sunt, temporibus ut vero.
@@ -195,10 +195,36 @@
                     </div>
                 </div>
                 <!--End left side blog-->
+
             </div>
         </div>
     </div>
 
+
+    <!--FORM-->
+    <div class="row ">
+        <div class="col-sm-8">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label>Title:</label>
+                    <input type="text" class="form-control" name="title" value="<%= questions.title %>">
+                </div>
+                <div class="form-group">
+                    <label>Description</label>
+                    <textarea class="form-control" name="description" rows="3"><%= questions.description %>
+                    </textarea>
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" class="form-control" name="userName" value="<%= questions.user.userName %>">
+                </div>
+                <a href="/questions" class="btn btn-primary btn-sm" role="button">Back</a>
+            </form>
+
+
+        </div>
+    </div>
+    <!--FORM-->
 
 
 </div>
