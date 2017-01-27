@@ -1,0 +1,13 @@
+@media only screen and (max-width: 320px) {
+  [class~=hide-extra-small] {
+    display: none; }
+  .upper-tabs ul a {
+    padding: 3px 1px; }
+  div.thumbnail {
+    position: static; } }
+
+@media only screen and (min-width: 321px) and (max-width: 767px) {
+  [class~=hide-extra-small] {
+    display: none; }
+  div.thumbnail {
+    position: static; } }

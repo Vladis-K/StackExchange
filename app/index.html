@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="Design Interior">
+    <meta name="Description" content="">
+    <title>StackExchange</title>
+    <!--<link rel="stylesheet" href="./css/normalize.css">-->
+    <link rel="shortcut icon" href="img/favicon-k.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- build:css css/vendor.min.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css css/main.min.css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <!-- endbuild -->
+
+</head>
+
+<body>
+
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">StackExchange</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <form class="navbar-form navbar-right" role="search">
+                <div class="form-group input-group">
+                    <input type="text" class="form-control" placeholder="Search..">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                      <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                  </span>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            <div class="subheader">
+                <div class="all-questions">
+                    <p>All Questions</p>
+                </div>
+                <!--Main pagination-->
+                <div class="upper-tabs pull-right">
+                    <div class="btn-group btn-xs">
+                        <button type="button" class="btn btn-default">All</button>
+                        <button type="button" class="btn btn-default">Answered</button>
+                        <button type="button" class="btn btn-default">Unanswered</button>
+                    </div>
+                </div>
+                <!--Finish main pagination-->
+            </div>
+        </div>
+        <!--Counter of questions-->
+        <div class="col-xs-12 col-sm-4 hide-extra-small">
+            <div class="all-summ">
+                <p>13,192,271</p>
+                <p>questions</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row ">
+        <div class="col-sm-8">
+            <!--Questions-->
+            <div class="row list-questions">
+                <!--Left side info-->
+                <div class="col-xs-1 col-sm-1">
+                    <div class="indicators">
+                        <p>310</p>
+                        <p>votes</p>
+                    </div>
+                    <div class="indicators">
+                        <p>250</p>
+                        <p>votes</p>
+                    </div>
+                    <div class="indicators">
+                        <p>7k</p>
+                        <p>views</p>
+                    </div>
+                </div>
+
+                <!--Right side blog-->
+                <div class="col-xs-10 col-sm-11">
+                    <div class="summary">
+                        <h3 id="question"><a href="">Title of questions</a></h3>
+                        <div class="expert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Cumque eveniet harum hic id itaque libero mollitia nam natus nemo nisi odio
+                            omnis quibusdam quo saepe sint sunt, temporibus ut vero.
+                        </div>
+                    </div>
+                    <!--User Info-->
+                    <div class="user-info">
+                        <div class="user-action-time">modified: {Jan 27, 2017}</div>
+                        <div class="user-details">
+                            <div class="user-id">id: {247}</div>
+                            <div class="user-name">{Den Cantor}</div>
+                        </div>
+                    </div>
+                    <!--End User Info-->
+                </div>
+                <!--Finish left side blog-->
+            </div>
+        </div>
+
+        <!--Left side of blog-->
+        <div class="col-sm-4">
+            <div class="thumbnail">
+                <div class="side-description">
+                    <p>Blog</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="side-description">
+                    <p>FEATURED ON META</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+                </div>
+                <div class="side-description">
+                    <p>HOT META POSTS</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+                </div>
+            </div>
+        </div>
+        <!--End left side of blog-->
+    </div>
+
+
+    <!--
+        Repeated Block
+    -->
+    <div class="row ">
+        <div class="col-sm-8">
+            <!--Questions-->
+            <div class="row list-questions">
+                <!--Right side info-->
+                <div class="col-xs-1 col-sm-1">
+                    <div class="indicators">
+                        <p>310</p>
+                        <p>votes</p>
+                    </div>
+                    <div class="indicators">
+                        <p>250</p>
+                        <p>votes</p>
+                    </div>
+                    <div class="indicators">
+                        <p>7k</p>
+                        <p>views</p>
+                    </div>
+                </div>
+                <!--Left side blog-->
+                <div class="col-xs-10 col-sm-11">
+                    <div class="summary">
+                        <h3 id="question-title"><a href="">Title of questions 2</a></h3>
+                        <div class="expert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Cumque eveniet harum hic id itaque libero mollitia nam natus nemo nisi odio
+                            omnis quibusdam quo saepe sint sunt, temporibus ut vero.
+                        </div>
+                        <!--User Info-->
+                        <div class="user-info">
+                            <div class="user-action-time">modified: {Jan 26, 2017}</div>
+                            <div class="user-details">
+                                <div class="user-id">id: {248}</div>
+                                <div class="user-name">{Jack Ball}</div>
+                            </div>
+                        </div>
+                        <!--End User Info-->
+                    </div>
+                    <div class="user-info ">
+                        <div class="action-time">
+                        </div>
+                        <div class="user-details">
+                            <div class="user-id">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End left side blog-->
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+    <!-- build:js js/vendor.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js js/main.min.js -->
+    <script src="js/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+
+</html>
