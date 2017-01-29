@@ -1,11 +1,11 @@
-@color0: #242729;
-@color1: #f9fbfd;
-@color2: #e4e6e8;
-@color3: #9fa6ad;
-@color4: #0077cc;
-@color5: #fda500;
-@color6: #f79f00;
-@color7: #818181;
+@color0: #242729; // Appears 9 times
+@color1: #f9fbfd; // Appears 5 times
+@color2: #e4e6e8; // Appears 4 times
+@color3: #9fa6ad; // Appears 3 times
+@color4: #0077cc; // Appears 3 times
+@color5: #fda500; // Appears 2 times
+@color6: #f79f00; // Appears 2 times
+@color7: #818181; // Appears 2 times
 
 
 
@@ -20,13 +20,11 @@ p {
 	color: @color7;
 	font-size: 13px;
 }
-button.btn, input.form-control, div.thumbnail, div.well, a.btn, .form-control  {
+button.btn, input.form-control, div.thumbnail, div.well, a.btn, nav.navbar, .form-control  {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 }
 nav.navbar {
-	-webkit-border-radius: 0;
-	border-radius: 0;
 	margin-bottom: 50px;
 }
 .summary {
@@ -185,6 +183,11 @@ form {
 	border-bottom: 1px solid @color2;
 	margin: 40px 0;
 	padding-bottom: 20px;
+}
+label {
+	color: @color0;
+	font-size: 14px;
+	font-weight: 600;
 }
 .questions-sign {
 	border-bottom: 1px solid @color2;
