@@ -9,13 +9,11 @@ p {
   font-size: 13px;
   color: #818181; }
 
-button.btn, input.form-control, div.thumbnail, div.well, a.btn, .form-control {
+button.btn, input.form-control, div.thumbnail, div.well, a.btn, nav.navbar, .form-control {
   -webkit-border-radius: 0;
   border-radius: 0; }
 
 nav.navbar {
-  -webkit-border-radius: 0;
-  border-radius: 0;
   margin-bottom: 50px; }
 
 .summary h3 a {
@@ -136,6 +134,11 @@ form {
   margin: 40px 0;
   padding-bottom: 20px;
   border-bottom: 1px solid #e4e6e8; }
+
+label {
+  color: #242729;
+  font-size: 14px;
+  font-weight: 600; }
 
 .questions-sign {
   font-size: 23px;
