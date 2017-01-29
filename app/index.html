@@ -29,58 +29,59 @@
 <body>
 
 
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">StackExchange</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <form class="navbar-form navbar-right" role="search">
-                <div class="form-group input-group">
-                    <input type="text" class="form-control" placeholder="Search..">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button">
-                      <span class="glyphicon glyphicon-search"></span>
-                    </button>
-                  </span>
-                </div>
-            </form>
-        </div>
-    </div>
-</nav>
-
-<div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-8">
-            <div class="subheader">
-                <div class="all-questions">
-                    <p>All Questions</p>
-                </div>
-                <!--Main pagination-->
-                <div class="upper-tabs pull-right">
-                    <div class="btn-group btn-xs">
-                        <button type="button" class="btn btn-default">All</button>
-                        <button type="button" class="btn btn-default">Answered</button>
-                        <button type="button" class="btn btn-default">Unanswered</button>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">StackExchange</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group input-group">
+                        <input type="text" class="form-control" placeholder="Search..">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                          <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                      </span>
                     </div>
-                </div>
-                <!--Finish main pagination-->
+                </form>
             </div>
         </div>
-        <!--Counter of questions-->
-        <div class="col-xs-12 col-sm-4 hide-extra-small">
-            <div class="all-summ">
-                <p>13,192,271</p>
-                <p>questions</p>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <div class="subheader">
+                    <div class="all-questions">
+                        <p>All Questions</p>
+                    </div>
+                    <!--Pagination-->
+                    <div class="upper-tabs pull-right">
+                        <div class="btn-group btn-xs">
+                            <button type="button" class="btn btn-default">All</button>
+                            <button type="button" class="btn btn-default">Answered</button>
+                            <button type="button" class="btn btn-default">Unanswered</button>
+                        </div>
+                    </div>
+                    <!--End pagination-->
+                </div>
             </div>
+            <!--Counter of questions-->
+            <div class="col-xs-12 col-sm-4 hide-extra-small">
+                <div class="all-summ">
+                    <p>13,192,271</p>
+                    <p>questions</p>
+                </div>
+            </div>
+            <!--End Counter-->
         </div>
     </div>
-</div>
 
     <div class="container">
      <div class="row ">
@@ -102,10 +103,10 @@
                         <p>views</p>
                     </div>
                 </div>
-                <!--Right side blog-->
+                <!--Side blog-->
                 <div class="col-xs-10 col-sm-11">
                     <div class="summary">
-                        <h3 id="question"><a href="">Title of questions</a></h3>
+                        <h3><a href="">Title of questions</a></h3>
                         <div class="expert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Cumque eveniet harum hic id itaque libero mollitia nam natus nemo nisi odio
                             omnis quibusdam quo saepe sint sunt, temporibus ut vero.
@@ -121,11 +122,11 @@
                     </div>
                     <!--End User Info-->
                 </div>
-                <!--Finish left side blog-->
+                <!--End side blog-->
             </div>
         </div>
 
-        <!--Left side of blog-->
+        <!--Right side blog-->
         <div class="col-sm-4">
             <div class="thumbnail">
                 <div class="side-description">
@@ -142,7 +143,7 @@
                 </div>
             </div>
         </div>
-        <!--End left side of blog-->
+        <!--End right side blog-->
     </div>
 </div>
 
@@ -172,7 +173,7 @@
                     <!--Blog-->
                     <div class="col-xs-10 col-sm-11">
                         <div class="summary">
-                            <h3 class="question-title"><a href="">Title of questions 2</a></h3>
+                            <h3><a href="">Title of questions 2</a></h3>
                             <div class="expert">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                                 Cumque eveniet harum hic id itaque libero mollitia nam natus nemo nisi odio
                                 omnis quibusdam quo saepe sint sunt, temporibus ut vero.
@@ -244,9 +245,8 @@
                     </div>
                 </div>
          </div>
-
-
     <!--End Main sign-->
+
     <div class="container">
         <div class="row ">
             <div class="col-sm-8">
@@ -290,6 +290,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--End Blog-->
                 </div>
             </div>
         </div>
@@ -380,7 +381,8 @@
             <form action="#" method="POST">
                 <div class="form-group">
                     <p class="text-form-sign">Your answer</p>
-                    <textarea class="form-control" name="description" rows="5"><%= questions.description %>
+                    <textarea class="form-control" name="description" rows="5">
+                        <%= questions.description %>
                     </textarea>
                 </div>
                 <a href="" class="btn btn-primary btn-sm" role="button">Post your answer</a>
@@ -388,7 +390,6 @@
         </div>
     </div>
     <!--FORM-->
-
 
 </div>
 
