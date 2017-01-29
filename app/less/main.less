@@ -1,23 +1,23 @@
-// Colors
-@color0: #f9fbfd;
-@color1: #242729;
-@color2: #9fa6ad;
-@color3: #0077cc;
-@color4: #fda500;
-@color5: #f79f00;
-@color6: #818181;
+@color0: #242729;
+@color1: #f9fbfd;
+@color2: #e4e6e8;
+@color3: #9fa6ad;
+@color4: #0077cc;
+@color5: #fda500;
+@color6: #f79f00;
+@color7: #818181;
 
 
 
 body {
-	color: @color6;
+	color: @color7;
 	font-family: Arial, 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;
 	margin: 0;
 	overflow-x: hidden;
 	padding: 0;
 }
 p {
-	color: @color6;
+	color: @color7;
 	font-size: 13px;
 }
 button.btn, input.form-control, div.thumbnail, div.well, a.btn, .form-control  {
@@ -38,7 +38,7 @@ nav.navbar {
 			line-height: 1.3em;
 			text-decoration: none;
 			&:hover {
-				color: @color3;
+				color: @color4;
 			}
 		}
 	}
@@ -52,46 +52,46 @@ nav.navbar {
 	float: left;
 	line-height: 2.22;
 	p {
-		color: @color1;
+		color: @color0;
 		display: inline-block;
 		font-size: 18px;
 		margin-bottom: 0;
 	}
 }
 .list-questions {
-	border-bottom: 1px solid #f2f4f6;
+	border-bottom: 1px solid @color2;
 }
 .btn-default {
 	-webkit-transition: all 0.4s ease-in-out;
-	background-color: @color2;
-	color: @color0;
+	background-color: @color3;
+	color: @color1;
 	margin-right: 3px;
 	transition: all 0.4s ease-in-out;
 	&:visited {
 		-webkit-transition: all 0.4s ease-in-out;
-		background-color: @color2;
-		color: @color0;
+		background-color: @color3;
+		color: @color1;
 		margin-right: 3px;
 		transition: all 0.4s ease-in-out;
 	}
 	&:hover {
 		-webkit-transition: all 0.4s ease-in-out;
-		background-color: @color5;
-		border: 1px solid @color5;
-		color: @color0;
+		background-color: @color6;
+		border: 1px solid @color6;
+		color: @color1;
 		transition: all 0.4s ease-in-out;
-		after {
+		&:after {
 			-webkit-transition: all 0.4s ease-in-out;
-			background-color: @color2;
-			color: @color0;
+			background-color: @color3;
+			color: @color1;
 			margin-right: 3px;
 			transition: all 0.4s ease-in-out;
 		}
 	}
 	&:active {
-		background-color: @color4;
-		border: 1px solid @color4;
-		color: @color0;
+		background-color: @color5;
+		border: 1px solid @color5;
+		color: @color1;
 	}
 }
 div.indicators {
@@ -116,13 +116,13 @@ div.all-summ {
 	margin: 0;
 	p {
 		&:nth-child(1) {
-			color: @color1;
+			color: @color0;
 			font-size: 23px;
 			line-height: .8;
 			margin: 0;
 		}
 		&:nth-child(2) {
-			color: @color1;
+			color: @color0;
 			display: inline-block;
 			font-size: 12px;
 			padding: 0;
@@ -134,7 +134,7 @@ div.all-summ {
 	font-size: 12px;
 	margin: 5px 0 15px 0;
 	.user-name {
-		color: @color3;
+		color: @color4;
 		font-weight: 600;
 		line-height: 17px;
 	}
@@ -156,7 +156,7 @@ div.thumbnail {
 				text-transform: uppercase;
 			}
 			&:nth-child(2) {
-				color: @color3;
+				color: @color4;
 				display: inline-block;
 				font-size: 13px;
 				line-height: 1.3;
@@ -169,12 +169,12 @@ div.thumbnail {
 div.side-description {
 	p {
 		&:nth-child(1) {
-			color: @color1;
+			color: @color0;
 			font-size: 23px;
 			margin: 0;
 		}
 		&:nth-child(2) {
-			color: @color1;
+			color: @color0;
 			display: inline-block;
 			font-size: 12px;
 			padding: 0;
@@ -182,5 +182,34 @@ div.side-description {
 	}
 }
 form {
-	margin: 50px 0;
+	border-bottom: 1px solid @color2;
+	margin: 40px 0;
+	padding-bottom: 20px;
+}
+.questions-sign {
+	border-bottom: 1px solid @color2;
+	color: @color0;
+	display: inline-block;
+	font-size: 23px;
+	padding-bottom: 13px;
+}
+[class*='triangle'] {
+	color: #858C93;
+	font-size: 2.5em;
+	&:hover {
+		cursor: pointer;
+	}
+}
+p.text-form-sign {
+	color: @color0;
+	font-size: 18px;
+}
+.answer-expert {
+	color: @color0;
+	font-size: 15px;
+	padding: 10px 0;
+}
+.answers {
+	border-bottom: 1px solid @color2;
+	padding: 60px 0 60px 0;
 }
